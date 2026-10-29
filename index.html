@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Label X Designs</title>
+<meta name="description" content="Label X Designs: handcrafted money envelopes, notecards, gift tags, wax seals, home décor and wedding invites.">
+<link rel="icon" type="image/png" href="images/logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=Figtree:wght@400;500;600;700&family=Archivo:wght@700;800&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div id="intro" aria-hidden="true">
+  <div class="pn l"></div><div class="pn r"></div>
+  <div class="core">
+    <div class="stamp"><img src="images/logo.png" alt=""></div>
+    <div class="name" id="iname"></div>
+    <div class="bar"></div>
+  </div>
+</div>
+
+<div class="announce" aria-label="Offers"><div class="mt" id="ann"></div></div>
+
+<header>
+  <div class="wrap hbar">
+    <a class="brand" href="#top" aria-label="Label X Designs home"><img src="images/logo.png" alt="Label X Designs logo"></a>
+    <nav id="nav" aria-label="Main">
+      <div class="ni"><button class="top" data-f="envelopes">Money Envelopes</button>
+        <div class="drop"><a href="#shop" data-f="envelopes">Shagun Envelopes</a><a href="#shop" data-f="envelopes">Personalised Envelopes</a><a href="#shop" data-f="kids">Kids Envelopes</a></div></div>
+      <div class="ni"><button class="top" data-f="cards">Cards &amp; Tags</button>
+        <div class="drop"><a href="#shop" data-f="cards">Notecards</a><a href="#shop" data-f="cards">Fold Cards</a><a href="#shop" data-f="cards">Gift Tags</a><a href="#shop" data-f="cards">Wax Seals</a><a href="#shop" data-f="cards">Playing Cards</a></div></div>
+      <div class="ni"><a class="top" href="#shop" data-f="festive">Festive</a></div>
+      <div class="ni"><button class="top" data-f="home">Home &amp; Living</button>
+        <div class="drop"><a href="#shop" data-f="home">Trays</a><a href="#shop" data-f="home">Photo Frames</a><a href="#shop" data-f="home">Coasters &amp; Placemats</a><a href="#shop" data-f="home">Tissue &amp; Storage Boxes</a><a href="#shop" data-f="home">Candles</a></div></div>
+      <div class="ni"><a class="top" href="#shop" data-f="kids">Kids</a></div>
+      <div class="ni"><a class="top" href="#wedding">Wedding Invites</a></div>
+    </nav>
+    <div class="icons">
+      <button class="ibtn" id="searchBtn" aria-label="Search" aria-expanded="false" aria-controls="searchBox"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
+      <button class="ibtn" id="cartBtn" aria-label="Open cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="count" id="count"></span></button>
+      <button class="ibtn" id="menuBtn" aria-label="Menu" aria-expanded="false" aria-controls="nav"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </div>
+  <div class="wrap search" id="searchBox"><input id="q" type="search" placeholder="Search envelopes, notecards, trays…" aria-label="Search products"></div>
+</header>
+
+<main id="top">
+<div class="hero">
+  <div class="wrap">
+    <div class="reveal-hero">
+      <span class="label">Handcrafted in India</span>
+      <h1>Stationery and keepsakes with a <em>signature</em> of their own.</h1>
+      <p class="lede">Shagun envelopes, notecards, gift tags, wax seals, home décor and wedding invites. Printed on thick paper and finished by hand.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="#shop">Shop the collection →</a>
+        <a class="btn btn-ghost" href="#wedding">Wedding invites</a>
+      </div>
+      <div class="trust">
+        <div><b><span data-count="280">280</span> GSM</b><span>premium paper</span></div>
+        <div><b><span data-count="48">48</span> hrs</b><span>design proof</span></div>
+        <div><b>Pan-India</b><span>delivery</span></div>
+      </div>
+    </div>
+    <div class="collage" aria-hidden="true">
+      <div class="ph" data-art="envHero"><span class="cap">Shagun Envelopes</span></div>
+      <div class="ph" data-art="seal"><span class="cap">Wax Seals</span></div>
+      <div class="ph" data-art="tray"><span class="cap">Home &amp; Living</span></div>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="shead rv"><div><span class="label">Shop by category</span><h2>Find the right <span>piece</span></h2></div></div>
+    <div class="cats" id="cats"></div>
+  </div>
+</section>
+
+<section style="padding-top:0">
+  <div class="wrap">
+    <div class="shead rv"><div><span class="label">Shop by occasion</span><h2>Gifting for every <span>celebration</span></h2></div></div>
+    <div class="occ">
+      <a href="#wedding" data-art="occWed"><span class="ot"><b>Shaadi</b><span>Invites &amp; shagun</span></span></a>
+      <a href="#shop" data-f="festive" data-art="occDiwali"><span class="ot"><b>Diwali</b><span>Festive hampers</span></span></a>
+      <a href="#shop" data-f="kids" data-art="occBday"><span class="ot"><b>Birthdays</b><span>Kids stationery</span></span></a>
+      <a href="#custom" data-prod="Festive Gift Set" data-art="occCorp"><span class="ot"><b>Corporate</b><span>Branded gifting</span></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="shop" id="shop">
+  <div class="wrap">
+    <div class="shead rv"><div><span class="label">The collection</span><h2>Bestsellers &amp; <span>new arrivals</span></h2></div><p>Every set can carry names, initials or a family crest. Pick a design, then tell us what to print.</p></div>
+    <div class="toolbar">
+      <div class="filters" role="group" aria-label="Filter products" id="filters"></div>
+      <label for="sort" style="color:var(--muted)">
+        <select id="sort" aria-label="Sort products"><option value="feat">Featured</option><option value="lo">Price: low to high</option><option value="hi">Price: high to low</option></select>
+      </label>
+    </div>
+    <div class="grid" id="grid"></div>
+    <div class="viewall"><button class="btn btn-ghost" id="viewAll">View all products</button></div>
+  </div>
+</section>
+
+<div class="shop promo">
+  <div class="wrap">
+    <div class="pb rv">
+      <div class="ptx">
+        <span class="label">Corporate Diwali 2026</span>
+        <h2>Branded gift kits for your team and clients</h2>
+        <p>Envelopes, notecards and hampers printed with your logo. Orders of 50+ get a free design proof and priority dispatch.</p>
+        <a class="btn" href="#custom" data-prod="Festive Gift Set">Get a corporate quote</a>
+      </div>
+      <div class="pim" data-art="hamperWide" aria-hidden="true"></div>
+    </div>
+  </div>
+</div>
+
+<section class="wedding" id="wedding">
+  <div class="wrap">
+    <div class="rv">
+      <span class="label">Wedding invites</span>
+      <h2>Your wedding begins with the <span>invite</span>.</h2>
+      <p class="sub">From boxed invitations with sweets inside to simple enveloped cards and digital invites for WhatsApp. Our designers build each suite around your colours and story.</p>
+      <div class="itypes">
+        <div><b>Boxed Invites</b><span>From ₹450 per invite</span></div>
+        <div><b>Enveloped Invites</b><span>From ₹180 per invite</span></div>
+        <div><b>Wedding Stationery</b><span>Menus, tags, place cards</span></div>
+        <div><b>Digital Invites</b><span>Video and e-card, from ₹2,500</span></div>
+      </div>
+      <div class="ctas"><a class="btn btn-primary" href="#custom" data-prod="Wedding Invites">Book a design call</a></div>
+    </div>
+    <div class="wimg rv" data-art="invite" aria-hidden="true"></div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="shead rv"><div><span class="label">Why Label X</span><h2>Made slowly, <span>gifted proudly</span></h2></div></div>
+    <div class="feat">
+      <div class="rv"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 20l4-1 11-11-3-3L5 16z"/></svg></span><h3>Personalised for you</h3><p>Names, initials, crests or your company logo. You approve a proof before we print.</p></div>
+      <div class="rv"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3c4 4 6 8 0 18-6-10-4-14 0-18z"/></svg></span><h3>Thick, eco-friendly paper</h3><p>280 GSM fine paper, metal rivets and jute ties that last beyond the occasion.</p></div>
+      <div class="rv"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="8" width="18" height="12" rx="2"/><path d="M3 12h18M12 8v12"/></svg></span><h3>Corporate &amp; bulk</h3><p>Branded Diwali kits and client gifting with priority dispatch for large orders.</p></div>
+      <div class="rv"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h12v10H3zM15 10h4l2 3v4h-6"/><circle cx="7" cy="18" r="1.8"/><circle cx="17" cy="18" r="1.8"/></svg></span><h3>Ships across India</h3><p>Packed flat and safe. Free shipping on orders above ₹1,999.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="custom" id="custom">
+  <div class="wrap">
+    <div class="box rv">
+      <div>
+        <span class="label">Personalise or order in bulk</span>
+        <h2>Tell us what to <span>print</span>.</h2>
+        <p class="sub">Share the product, quantity and names. We send a design proof and quote on WhatsApp within 48 hours.</p>
+        <ol class="steps">
+          <li><b>1</b><span>Pick a design and quantity</span></li>
+          <li><b>2</b><span>Share names, logo or colours</span></li>
+          <li><b>3</b><span>Approve the proof, we print and ship</span></li>
+        </ol>
+      </div>
+      <form id="orderForm" novalidate>
+        <div class="row">
+          <label for="fname">Your name<input id="fname" placeholder="Priya Sharma" autocomplete="name"></label>
+          <label for="fphone">WhatsApp number<input id="fphone" inputmode="tel" placeholder="98XXXXXXXX" autocomplete="tel"></label>
+        </div>
+        <div class="row">
+          <label for="fprod">Product<select id="fprod"></select></label>
+          <label for="fqty">Quantity<select id="fqty"><option>1–10 sets</option><option>10–25 sets</option><option selected>25–100 sets</option><option>100+ sets</option></select></label>
+        </div>
+        <label for="fnote">Occasion &amp; details<textarea id="fnote" placeholder="Wedding on 12 Dec, names Aarav &amp; Isha, maroon and gold"></textarea></label>
+        <button class="btn btn-primary" type="submit">Request a proof &amp; quote</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div class="fbrand"><img src="images/logo.png" alt="Label X Designs"><p>Stationery, keepsakes and invitations designed and finished by hand in India.</p>
+        <form class="news" id="news"><input id="nemail" type="email" placeholder="Email for new launches" aria-label="Email address"><button type="submit">Join</button></form></div>
+      <div><h4>Shop</h4><ul><li><a href="#shop" data-f="envelopes">Money Envelopes</a></li><li><a href="#shop" data-f="cards">Notecards &amp; Tags</a></li><li><a href="#shop" data-f="home">Home &amp; Living</a></li><li><a href="#shop" data-f="kids">Kids</a></li><li><a href="#wedding">Wedding Invites</a></li></ul></div>
+      <div><h4>Help</h4><ul><li><a href="#custom">Bulk &amp; corporate</a></li><li><a href="#">Shipping</a></li><li><a href="#">Returns</a></li><li><a href="#">FAQs</a></li></ul></div>
+      <div><h4>Say hello</h4><ul><li>hello@labelx.in</li><li>+91 98XXX XXXXX</li><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li></ul></div>
+    </div>
+    <div class="copy"><span>© 2026 Label X Designs</span><span>Prototype · prices and contact details are placeholders</span></div>
+  </div>
+</footer>
+
+<nav id="bbar" aria-label="Quick links">
+  <a href="#top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg>Home</a>
+  <a href="#shop"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="4" width="7" height="7" rx="1.5"/><rect x="13" y="4" width="7" height="7" rx="1.5"/><rect x="4" y="13" width="7" height="7" rx="1.5"/><rect x="13" y="13" width="7" height="7" rx="1.5"/></svg>Shop</a>
+  <button id="bSearch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>Search</button>
+  <button id="bCart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M5 8h14l-1 12H6z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg>Cart<span class="count"></span></button>
+</nav>
+
+<div id="scrim"></div>
+<aside id="cart" aria-label="Cart" aria-hidden="true">
+  <div class="ch"><h3>Your cart</h3><button class="ibtn" id="cartClose" aria-label="Close cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <div id="citems"></div>
+  <div class="cfooter">
+    <div class="ship" id="ship"></div>
+    <div class="tot"><span>Subtotal</span><span id="sub">₹0</span></div>
+    <button class="btn btn-primary" id="checkout">Checkout</button>
+  </div>
+</aside>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
